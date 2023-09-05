@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <!-- for using bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style>
+header .song_side .content .background {
+    width: 47%;
+    height: 100%;
+    /* border: 1px solid white; */
+    background-image: url(photos/kk.avif);
+    background-size: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+<!-- queue -->
+
+ <div class="menu_side">
+    <h1>Playlist</h1>
+    <h6 id="menu_list_active_button"><i class="bi bi-music-note-list"></i></h6>
+    <h2 id="cross_button"><i class="bi bi-x-square-fill"></i></h2>
+    <!-- playlist -->
+    <div class="playlist">
+  
+    </div>
+
+    <!-- playlist song -->
+
+    <div class="menu_song">
+        <!-- song description -->
+        <!-- 1st song -->
+   
+              <!-- 6th song -->
+              <li class="songItem">
+                <span>01</span>  <!--song num-->
+                <img src="photos/kk_pho/1.jpg">     <!--song pic-->
+                <h5>Ankhon Mai Teri <br> <div class="subtitle">K.K </div></h5><!--song name and subtitle-->
+                <i class="bi playListPlay bi-play-circle-fill" id="1"></i>   <!-- play button-->
+            </li>
+        
+
+ <!-- 31th song -->
+ <li class="songItem">
+    <span>02</span>  <!--song num-->
+    <img src="photos/kk_pho/2.jpg">     <!--song pic-->
+    <h5>Beete Lamhe<br> <div class="subtitle">K.K</div></h5><!--song name and subtitle-->
+    <i class="bi playListPlay bi-play-circle-fill" id="2"></i>   <!-- play button-->
+</li>
+
+
+    </div>
+    
+ </div>   
+
+ <!-- main -->
+ <div class="song_side">
+    <nav>
+        <ul>
+            <li>Discover <span></span></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <!-- search bar -->
+        <div class="search">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search Music...">
+            <div class="search_results"> </div> <!-- search result box -->
+
+            <!-- <i class="bi bi-mic-fill"></i> -->
+        </div>
+        <div class="user">
+            <img src="photos/n.jpg " alt="">
+        </div>
+    </nav>
+    <div class="content">
+        <div class="info">
+        <h1>KK</h1>
+        <p>
+            Krishnakumar Kunnath (23 August 1968 to 31 May 2022), popularly 
+            known as KK, was an Indian playback singer. He recorded songs in 
+            Hindi, Tamil, Telugu, Kannada, Malayalam, Marathi, Odia, Bengali,
+            Assamese and Gujarati. KK began his career by singing advertising 
+            jingles and made his film debut in 1996 on an A. R. Rahman sound 
+            track.
+         </p>
+            <div class="buttons">
+                <button>PLAY</button>
+                <button>FOLLOW</button>
+            </div>
+            </div>
+            <div class="background">
+            
+            </div>
+    </div>
+  
+
+ <!-- artist sec -->
+ <div class="popular_artists">
+        <div class="h4">
+            <h4>Popular Artists</h4>
+            <div class="btn_s">
+                <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                <i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+            </div>
+        </div>
+        <div class="item">
+            <li>
+                <a href="arijit.html"><img src="photos/arijit.jpg" alt=""></a>
+              </li>
+              <li>
+                 <a href="atif.html"> <img src="photos/Atif-Aslam.jpg" alt=""></a>
+              </li>
+              <li>
+                 <a href="narender.html"> <img src="photos/negi ji.jpg" alt=""></a>
+              </li>
+              <li>
+                  <a href="ar.html"><img src="photos/AR rahman.jpg" alt=""></a>
+              </li>
+              <li>
+                 <a href="allen.html"> <img src="photos/Alan .jpg" alt=""></a>
+              </li>
+              <li>
+                  <a href="pritam.html"><img src="photos/pritam.jfif" alt=""></a>
+              </li>
+              <li>
+                 <a href="badshah.html"> <img src="photos/badshah.jfif" alt=""></a>
+              </li>
+           
+              <li>
+                 <a href="rahet.html"> <img src="photos/rahet.jfif" alt=""></a>
+              </li>
+              <li>
+                 <a href="guru.html"> <img src="photos/guru.jpg" alt=""></a>
+              </li>
+        </div>
+ </div>
+ </div>
+
+ <!-- bottom play -->
+
+ <div class="master_play">
+
+<!-- creating wave animation -->
+
+<div class="wave" id="wave">
+    <div class="wave1"></div>
+    <div class="wave1"></div>
+    <div class="wave1"></div>
+</div>
+<!-- song image -->
+<img src="photos/kk_pho/1.jpg" alt="" id="poster_master_play">
+
+<!-- song title -->
+<h5 id="title">
+    Ankhon Mai Teri
+
+    <div class="subtitle">K.K</div>
+</h5>
+
+<!-- audio control -->
+<div class="icon">
+    <i class="bi shuffle bi-music-note-beamed">next</i>
+    <i class="bi bi-skip-start-fill" id="back"></i>
+    <i class="bi bi-play-fill" id="masterPlay"></i>
+    <i class="bi bi-skip-end-fill" id="next"></i>
+    <a href="" download id="download_music"><i class="bi bi-download"></i></a>
+</div>
+<!--  music time  -->
+<span id="currentStart">0:00</span>
+
+<!-- seek bar -->
+<div class="bar">
+<input type="range" id="seek" min="0" max="100">
+<div class="bar2" id="bar2"></div>
+<div class="dot"></div>
+</div>
+<span id="currentEnd">0:00</span>
+<!-- volume -->
+<div class="vol">
+    <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+<input type="range" id="vol" min="0" max="100">
+<div class="vol_bar"></div>
+<div class="dot" id="vol_dot"></div>
+
+
+
+</div>
+ </div>
+
+</header>
+
+<script src="kk.js"></script>
+
+</body>
+</html>
