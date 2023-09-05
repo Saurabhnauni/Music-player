@@ -150,7 +150,7 @@ header .menu_side .playlist .active .bi {
 
 header .menu_side .menu_song {
     width: 100%;
-    height: 390px;
+    height: 600px;
     /* border: 1px solid white; */
     margin-top: 40px;
     /* for creating scroll effect */
