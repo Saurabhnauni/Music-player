@@ -57,7 +57,7 @@
     header .menu_side h6 {
         position: absolute;
         right: -40px;
-        bottom: 200px;
+        bottom: 400px;
         width: 40px;
         height: 40px;
         background: #111727;
@@ -125,8 +125,8 @@
 
     header .master_play .icon {
         position: absolute;
-        top: 500px;
-        right: 20%;
+        top: 740px;
+        right: 32%;
     }
 
 
@@ -144,10 +144,10 @@
 
     header .master_play .wave {
         position: absolute;
-        top: 460px;
+        top: 690px;
         height: 40px;
         width: 40px;
-        right: 31.5%;
+        right: 42.5%;
     }
 
     header .master_play .wave .wave1 {
