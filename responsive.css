@@ -125,8 +125,8 @@
 
     header .master_play .icon {
         position: absolute;
-        top: 740px;
-        right: 32%;
+        top: 720px;
+        right: 31%;
     }
 
 
@@ -144,7 +144,7 @@
 
     header .master_play .wave {
         position: absolute;
-        top: 690px;
+        top: 670px;
         height: 40px;
         width: 40px;
         right: 42.5%;
